@@ -8,7 +8,7 @@ class Profile extends StatelessWidget{
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.deepOrange.withValues(alpha: 0.7),
-        title: const Text('Frandolph')
+        title: const Text('Frandolph Joseph L. Guadalupe')
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -16,31 +16,34 @@ class Profile extends StatelessWidget{
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Center(
-                child: Container(
-                  width: 100,
-                  height: 100,
-                  decoration: BoxDecoration(
-                    color: Colors.grey,
-                    shape: BoxShape.circle, // Use BoxShape.circle for a round image
-                    image: DecorationImage(
-                      image: AssetImage('assets/profile_picture.png'),
-                      fit: BoxFit.cover,
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    width: 100,
+                    height: 100,
+                    decoration: BoxDecoration(
+                      color: Colors.grey,
+                      shape: BoxShape.circle, // Use BoxShape.circle for a round image
+                      image: DecorationImage(
+                        image: AssetImage('assets/profile_picture.png'),
+                        fit: BoxFit.cover,
+                      ),
+                      border: Border.all(color: Colors.deepOrange, width: 2), // Optional border
                     ),
-                    border: Border.all(color: Colors.deepOrange, width: 2), // Optional border
                   ),
-                ),
-              ),
-              const SizedBox(height: 16),
-              Center(
-                child: Text(
-                  'Hi! My name is Frandolph.',
-                  style: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.w500,
-                    color: Colors.deepOrange,
+                  const SizedBox(width: 16),
+                  Expanded(
+                    child: Text(
+                      'Hi! My name is Frandolph.',
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.w500,
+                        color: Colors.deepOrange,
+                      ),
+                    ),
                   ),
-                ),
+                ],
               ),
               const SizedBox(height: 24),
               // Email Section
