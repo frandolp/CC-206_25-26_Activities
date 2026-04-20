@@ -67,7 +67,7 @@ class Profile extends StatelessWidget{
               
               // Biography Section
               Text(
-                'Biography',
+                'My Biography',
                 style: Theme.of(context).textTheme.titleLarge?.copyWith(
                   fontWeight: FontWeight.bold,
                   color: Colors.deepOrange,

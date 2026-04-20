@@ -110,7 +110,10 @@ class _PetState extends State<Pet> {
                 icon: const Icon(Icons.volume_up),
                 label: const Text(
                   'Play Bark Sound',
-                  style: TextStyle(fontSize: 16),
+                  style: TextStyle(
+                    fontSize: 16,
+                    color: Colors.black,
+                  ),
                 ),
               ),
             ],
